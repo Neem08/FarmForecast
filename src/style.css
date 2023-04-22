@@ -1,0 +1,343 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(120deg, #111b10 0%, #21ca54 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 2rem;
+  }
+  
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+  }
+  form button {
+    color: #21ca54;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #21ca54;
+    color: white;
+  }
+
+  .trash-btn,
+  .complete-btn {
+    background: #21ca54;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .complete-btn {
+    background: rgb(11, 212, 162);
+  }
+
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  
+  .fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    width: 1350px;
+    height: 1000px;
+    position: relative;
+    
+
+  }
+
+  .header-title1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffbf0f;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-title2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .header-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  /*card*/
+  .header .button1{
+    position: absolute;
+    width:150px ;
+    height: 50px;
+    top: 5%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fffefe;
+    color: rgb(8, 0, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius:30px;
+    text-align: center;
+  }
+.section .form1{
+  margin-left: 50;
+  }
+  .grid-container {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto auto ;
+    background-color: #e2e6e9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .grid-item {
+    background-color:rgb(22,89,40);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    width:auto;
+    border-radius: 15px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .para{
+   margin-top: 5%;
+  }
+  .section .button2{
+    position: absolute;
+    width: 200px;;
+    height:50px;
+    top: 180%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #080000;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius:30px;
+    text-align: center;
+  }
+  .header .button2{
+    position: absolute;
+    width:150px ;
+    height: 50px;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f8f2f2;
+    color: rgb(84, 77, 77);
+    font-size: 15px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius:30px;
+    text-align: center;
+  }
+
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin-bottom: 70px;
+    padding: 20px;
+    background-color: #f8f4f4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .section .button1{
+    position: absolute;
+    width: 200px; ;
+    height: 50px;
+    height: 50px;
+    top: 180%;
+    left:55%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius:30px;
+    text-align: center;
+  }
+
+ 
+.button1:hover {
+  background-color: #3e8e41;
+  color: rgb(255, 250, 250);
+}
+
+ /* .button1:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+*/
+.button2:hover {
+  background-color: #3e8e41;
+  color: rgb(247, 244, 244);
+}
+
+ 
+
+ /*.button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }  */
+
+
+
+
+
+
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: #4CAF50; /* Green */
+    
+
+  }
+  /*Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  
+  .small-div {
+    flex-basis: 30%;
+    margin-right: 20px;
+  }
+  
+  .small-div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .big-div {
+    flex-basis: 70%;
+  }
+  
+  .div-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #45865e;
+  }  */
+
+  .button {
+    background-color: #4CAF50; /* Green */
+   border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .section-title1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffbf0f;
+    text-align:center;
+    margin-bottom: 20px;
+  }
+
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fdfdfd;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: rgb(253, 253, 253);
+}
+
+.grid-item:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+
+
